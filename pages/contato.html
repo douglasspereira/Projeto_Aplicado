@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato</title>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="produto.html">Produtos</a></li>
+        <!-- <li><a href="produto.html">Produtos</a></li> -->
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
@@ -29,7 +29,17 @@
       <input type="email" id="email" name="email" required>
       <label for="message">Mensagem:</label>
       <textarea id="message" name="message" required></textarea>
-      <button type="submit">Enviar</button>
+      
+      <button id="botao">Enviar</button>
+
+      <script>
+        var successButton = document.getElementById('botao');
+    
+        successButton.addEventListener('click', function() {
+          alert('Ação realizada com sucesso!');
+        });
+      </script>
+
     </form>
   </section>
 
